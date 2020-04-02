@@ -1,5 +1,5 @@
 function confirmar() {
-    // VARIÁVEIS DAS RESPOSTAS E DIV DE RESULTADO.
+    // VARIABLES FROM ANSWERS AND RESULT DIV.
     let answers = []
     answers[0] = document.querySelector("select#maca").value
     answers[1] = document.querySelector("select#banana").value
@@ -9,21 +9,21 @@ function confirmar() {
     const res = document.querySelector("div#res")
     let points = 0
     let _error = 0
-    // alert(answers) //Usado para conferir o conteúdo de 'answers'
+    // alert(answers) //Used to check 'answers' content
 
     //Verificar a validade das respostas.
     for (let c in answers) {
-        if (answers[c] == 'res') {//Verifica se alguma questão não foi respondida.
+        if (answers[c] == 'res') {//Check if any of the questions was left unanswered.
             _error = 1
         }
-        if (answers[c] == 1) {//verifica se as respostas estão correstas.
+        if (answers[c] == 1) {//Check if the answers are correct.
             points++
         }
     }
-    // alert(points)
-    if (_error == 1) {//Mensagem de erro, caso alguma questão não seja responida.
+    // alert(points) //Check the content of 'points'
+    if (_error == 1) {//Error message, in case there's a unanswered question.
         alert('[ERRO]Você precisa responder todas as questões.')
-    } else {//Imprimir o resultado na Div de resultado
+    } else {//Print the result in the result Div
         switch (points) {
             case 0: res.innerHTML = `Que pena, você não fez nenhum ponto.`
                 break
