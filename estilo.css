@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap'); /*Fonte externa "Oswald" */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap'); /*External font "Oswald" */
 body{
     background-color: rgb(105, 174, 230);
 }
@@ -12,7 +12,7 @@ div#corpo{
     left: 50%;
     transform: translateX(-50%);
 }
-/* Formatação tabela*/
+/* Table Format*/
 #tabela{
     border: 1px solid black;
     border-spacing: 0px;
@@ -30,7 +30,7 @@ div#corpo{
     padding: 8px;
 }
 
-/* FORMATAÇÃO SELECT DE AUTORIA DE WebCis */
+/* SELECT FORMAT ORIGINAL FROM: WebCis */
 .div-select {
     position: relative;
     left: 50%;
@@ -51,7 +51,7 @@ div#corpo{
     text-overflow: "";  /* Remove seta padrão do FireFox */     
     select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
  } 
-/*Formatação Botão*/
+/*Button format*/
 #botao{
 width: 50%;
 background-color: #354880;
@@ -62,7 +62,7 @@ position: relative;
 left: 50%;
 transform: translateX(-53%);
 }
-/*Formatação Área de resultado e Footer */
+/*Format Result area and Footer */
 div#res{
 text-align: center;
 }
