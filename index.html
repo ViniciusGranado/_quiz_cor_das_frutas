@@ -1,0 +1,91 @@
+<!-- Quiz "Cor das Frutas"
+    Esta página possui um mini-game, onde o usuário precisa acertar a cor correta de cada fruta. 
+    Foi criado com o propósito de estudo de alguns elementos: "table", "option", formatações CSS, Arrays, Functions. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta chatset="UTF=8">
+    <title>Cor das Frutas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <div id="corpo">
+        <table id="tabela">
+            <caption id="tableTitle">Quiz "Cor das Frutas"<br/> Qual é a cor das frutas indicadas?</caption>
+
+            <tr>
+                <td class="ce">Macã</td>
+                <td>
+                    <div class="div-select">
+                        <select id="maca">
+                            <option value="res">Resposta</option>
+                            <option value="1">Vermelho</option>
+                            <option value="0"> Amarelo</option>
+                            <option value="0"> Verde</option>
+                        </select></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="ce">Banana</td>
+                <td>
+                    <div class="div-select">
+                        <select id="banana">
+                            <option value="res">Resposta</option>
+                            <option value="0">Vermelho</option>
+                            <option value="1"> Amarelo</option>
+                            <option value="0"> Verde</option>
+                        </select></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="ce">Melancia</td>
+                <td>
+                    <div class="div-select">
+                        <select id="melancia">
+                            <option value="res">Resposta</option>
+                            <option value="0">Vermelho</option>
+                            <option value="0"> Amarelo</option>
+                            <option value="1"> Verde</option>
+                        </select></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="ce">Abacaxi</td>
+                <td>
+                    <div class="div-select">
+                        <select id="abacaxi">
+                            <option value="res">Resposta</option>
+                            <option value="0">Vermelho</option>
+                            <option value="1"> Amarelo</option>
+                            <option value="0"> Verde</option>
+                        </select></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="ce">Abacate</td>
+                <td>
+                    <div class="div-select">
+                        <select id="abacate">
+                            <option value="res">Resposta</option>
+                            <option value="0">Vermelho</option>
+                            <option value="0"> Amarelo</option>
+                            <option value="1"> Verde</option>
+                        </select></div>
+                </td>
+            </tr>
+        </table>
+        <input id="botao" type="button" value="Confirmar" onclick="confirmar()">
+
+
+
+        <div id="res">Para jogar, selecione acima a sua resposta, quando terminar, clique em Confirmar</div>
+        <footer>&copy;ViniciusGranado</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
